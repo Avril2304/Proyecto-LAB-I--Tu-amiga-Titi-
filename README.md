@@ -19,18 +19,27 @@ El objetivo principal del proyecto es automatizar el cuidado de la planta, ofrec
 
 ## Contenido del repositorio
 **1. Documentos**
-    * Anteproyecto
+
+    * Anteproyecto 
     * Informe del proyecto
     * Presentacion PowerPoint 
     * Video Tutorial
+    
 **2. APP**
+
     * archivo .aia de "APP Inventor"
     * codigo de la app 
+
 **3. Arduino**
+
     * codigo en c++
+
 **4. Diseño 3D**
+
     * tinkercard
+
 **5. Diseño Electronico**
+
     * tinkercard 
 
 ## Guía de instalación 
