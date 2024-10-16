@@ -43,5 +43,5 @@ El objetivo principal del proyecto es automatizar el cuidado de la planta, ofrec
     * tinkercard 
 
 ## Guía de instalación 
-## Licencias
+
 
