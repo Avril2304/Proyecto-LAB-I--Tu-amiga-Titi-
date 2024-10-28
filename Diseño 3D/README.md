@@ -1,7 +1,8 @@
 # Diseño 3D
 ##### Proyecto LAB I 
 ### Por Bianconi Clara y Ogas Avril:
-En esta carepeta encontraremos los archivos del diseño 3D en tinkercard de nuestro proyecto "Tu amiga Titi":
+En esta carepeta encontraremos las imagenes del diseño 3D en tinkercard de nuestro proyecto "Tu amiga Titi":
+
 ![Captura de pantalla 2024-08-14 173220](https://github.com/user-attachments/assets/32b7988f-7b4d-4905-9856-a059570eae69)
 
 ![Captura de pantalla 2024-08-14 173316](https://github.com/user-attachments/assets/3932c1ec-a93d-4b12-9d57-75a15dc913ff)
