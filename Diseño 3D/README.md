@@ -2,7 +2,9 @@
 ##### Proyecto LAB I 
 ### Por Bianconi Clara y Ogas Avril:
 En esta carepeta encontraremos los archivos del diseño 3D en tinkercard de nuestro proyecto "Tu amiga Titi":
-![Captura de pantalla 2024-08-14 173334](https://github.com/user-attachments/assets/28db099f-05c0-404e-aeb7-eac84dca13ba)
-![Ca![Captura de pantalla 2024-08-14 173220](https://github.com/user-attachments/assets/ed7256d3-726b-44cd-857c-51ca453c3a2e)
-![Captura de pantalla 2024-08-14 173404](https://github.com/user-attachments/assets/495310fc-e0c2-4bd9-8f5f-96afc47926b1)
-ptura de pantalla 2024-08-14 173316](https://github.com/user-attachments/assets/d704da1a-f6e5-441b-a701-7412f9bbba3a)
+![Captura de pantalla 2024-08-14 173220](https://github.com/user-attachments/assets/32b7988f-7b4d-4905-9856-a059570eae69)
+
+![Captura de pantalla 2024-08-14 173316](https://github.com/user-attachments/assets/3932c1ec-a93d-4b12-9d57-75a15dc913ff)
+
+![Captura de pantalla 2024-08-14 173404](https://github.com/user-attachments/assets/f964ffb6-7963-41db-bd1d-8518b1045e20)
+
