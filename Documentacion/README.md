@@ -1,7 +1,7 @@
 # Documentación
 ##### Proyecto LAB I 
 ### Por Bianconi Clara y Ogas Avril:
-En esta carepeta encontraremos los archivos de nuestro proyecto "Tu amiga Titi":
+En esta carpeta encontraremos los archivos de nuestro proyecto "Tu amiga Titi":
 
 ## Anteproyecto_Tu_amiga_Titi en PDF
 En el anteproyecto se encuentra la propuesta del proyecto con las ideas que deseabamos alcanzar.
