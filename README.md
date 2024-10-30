@@ -39,7 +39,9 @@ El objetivo principal de este proyecto es automatizar el cuidado de la planta, o
 
 **4. Diseño 3D**
 
-    * tinkercard
+    * Diseño 3D Titi
+        + obj.mtl
+        + tinker.obj
 
 **5. Diseño Electronico**
 
