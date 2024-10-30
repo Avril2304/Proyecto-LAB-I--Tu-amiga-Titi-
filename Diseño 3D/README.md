@@ -4,7 +4,7 @@
 En esta carpeta encontraremos los archivos .obj (Wavefront) del diseño 3D en tinkercard de nuestro proyecto "Tu amiga Titi":
 <style>
     .small-image {
-        width: 300px; /* Puedes ajustar el tamaño aquí */
+        width: 100px; 
     }
 </style>
 
