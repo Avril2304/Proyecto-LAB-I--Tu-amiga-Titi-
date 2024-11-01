@@ -45,7 +45,11 @@ El objetivo principal de este proyecto es automatizar el cuidado de la planta, o
 
 **5. Diseño Electronico**
 
-    * tinkercard 
+    * Diseño Electronico
+        + diseño del circuito electronico-AutoDesk
+        + diseño electronico titi.brd
+        + diseño electronico-editado
+        + diseño electronico-tinkercard
 
 ## Guía de instalación 
 
