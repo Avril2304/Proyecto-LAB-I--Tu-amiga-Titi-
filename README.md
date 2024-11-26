@@ -54,19 +54,102 @@ El objetivo principal de este proyecto es automatizar el cuidado de la planta, o
 ## Guía de instalación 
 Para la correcta instalación del prototipo "Tu Amiga Titi", es necesario seguir los pasos detallados a continuación para asegurar la correcta conexión y configuración de los componentes, apoyese de los recursos provistos en la documentacion (Video tutorial) y en el diseño electronico (esquematico del diseño electronico-editado). 
 
-### Conexiones: 
+### 1. Recursos Adicionales
+Aprovecha los recursos proporcionados para facilitar el proceso de instalación:
 
-Primero, conecte la placa Arduino Mega a un espacio seguro, preferiblemente utilizando una protoboard para simplificar las conexiones y evitar posibles cortocircuitos. A continuación, conecte los cables necesarios de la mini bomba de agua en la protoboard e coloque la mini bomba de agua sumergible dentro de un recipiente con agua, conectando una manguera de cristal a su salida y dirigiéndola hacia la maceta que contiene la planta. Asegúrese de que la bomba esté completamente sumergida en el agua para un funcionamiento óptimo. 
+***Video tutorial:*** Consulta el video para una explicación visual de cada paso.
+***Esquemático del diseño electrónico:*** Verifica las conexiones siguiendo el esquema editado.
 
-La pantalla LCD Display 20x4 debe conectarse a la placa Arduino, siguiendo el esquema de conexión provisto, prestando especial atención a los pines de alimentación y comunicación. El sensor de humedad debe insertarse en el sustrato de la planta, conectando sus pines de alimentación y señal a la placa Arduino Mega. Asegúrese de que el sensor esté colocado en la tierra de su planta. El sensor capacitivo TTP223, que permite la interacción táctil, debe ubicarse en un lugar de fácil acceso y conectarse adecuadamente a la placa, siguiendo el esquema de conexión proporcionado. 
+### 2. Conexiones de Hardware
 
-El sensor de luz debe instalarse en un lugar donde pueda medir de manera precisa la intensidad de la luz ambiental. Asegúrese de que sus pines de alimentación y señal estén conectados correctamente a la placa Arduino. El módulo DFPlayer Mini debe conectarse al serial 1 de la placa Arduino Mega, asegurándose de que el altavoz esté correctamente conectado para la emisión de sonidos. Finalmente, el módulo Bluetooth HC-06 debe conectarse al puerto serial 2 en la placa Arduino, verificando las conexiones de alimentación, RX y TX. 
+**Paso 1: Configuración Inicial**
 
-Código: 
+- Coloca la placa Arduino Mega en un lugar seguro, utilizando una protoboard para las conexiones y evitar cortocircuitos.
+- Conecta la placa a tu computadora mediante un cable USB o a una fuente de alimentación externa adecuada.
 
-Una vez realizados todos los cableados, verifique que todos los componentes estén correctamente instalados: la bomba de agua debe estar funcionando dentro del recipiente con agua, la manguera debe estar correctamente orientada hacia la maceta, y los sensores deben estar correctamente ubicados para medir la humedad, la luz y recibir la interacción táctil. Posteriormente, cargue el código proporcionado en el Arduino IDE, seleccionando correctamente el puerto y modelo de la placa antes de compilar y cargar el programa. 
+**Paso 2: Conexión de la Mini Bomba de Agua**
+- Sitúa la mini bomba sumergible en un recipiente lleno de agua.
+- Conecta una manguera de cristal a la salida de la bomba y dirige su extremo hacia la maceta.
+- Asegúrate de que la bomba esté completamente sumergida en el agua.
+- Realiza la conexión eléctrica:
+    + VCC y GND al módulo de control (relé o transistor).
+    + Conecta el módulo al Arduino Mega para controlar la bomba desde el software.
 
-Aplicación: 
+**Paso 3: Pantalla LCD Display 20x4**
+- Conecta la pantalla LCD al módulo I2C para simplificar las conexiones.
+- Realiza las conexiones según el esquema:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + SDA: Pin SDA (20) en Arduino Mega.
+    + SCL: Pin SCL (21) en Arduino Mega.
 
- Una vez validado el sistema, descargue e instale la aplicación móvil desde el enlace proporcionado. Asegúrese de que el dispositivo Bluetooth del prototipo se conecte correctamente con su teléfono móvil. Con todos estos pasos completados, el prototipo estará listo para su uso.
+**Paso 4: Sensor de Humedad**
+- Inserta el sensor en la tierra de la planta para medir la humedad del sustrato.
+- Conecta sus pines:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + Signal: Pin analógico A0 en Arduino Mega.
 
+**Paso 5: Sensor Táctil Capacitivo TTP223**
+-Coloca el sensor en un lugar accesible para la interacción del usuario.
+-Conecta sus pines:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + Signal: Pin digital (D2, por ejemplo) en Arduino Mega.
+
+**Paso 6: Sensor de Luz**
+- Posiciona el sensor donde pueda medir la intensidad lumínica ambiental.
+- Realiza las conexiones:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + Signal: Pin analógico (A1, por ejemplo) en Arduino Mega.
+
+**Paso 7: Módulo DFPlayer Mini**
+- Conecta el módulo al puerto Serial 1 de Arduino Mega:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + RX y TX: Pines TX1 y RX1 de Arduino Mega.
+- Conecta el altavoz al módulo DFPlayer Mini, asegurando la polaridad correcta.
+
+**Paso 8: Módulo Bluetooth HC-06**
+- Conecta el módulo Bluetooth al puerto Serial 2 de Arduino Mega:
+    + VCC: Pin de 5V en Arduino Mega.
+    + GND: Pin GND en Arduino Mega.
+    + RX: Pin TX2 en Arduino Mega.
+    + TX: Pin RX2 en Arduino Mega.
+- Verifica que las conexiones estén firmes para evitar interrupciones en la comunicación.
+
+### 3. Configuración de Software
+
+**Paso 1: Verificación de Conexiones**
+Antes de cargar el código, verifica:
+
+- La bomba de agua está correctamente instalada y orientada.
+- Los sensores están posicionados adecuadamente y conectados firmemente.
+- Los módulos LCD, DFPlayer y Bluetooth están conectados según el esquema.
+
+**Paso 2: Carga del Código**
+- Abre el Arduino IDE en tu computadora.
+- Carga el código proporcionado:
+    + Selecciona el modelo de placa (Arduino Mega 2560).
+    + Configura el puerto correspondiente.
+    + Compila y sube el programa al Arduino Mega.
+    + Observa el funcionamiento inicial de los componentes.
+
+### 4. Configuración de la Aplicación Móvil
+***Descarga e instalación:*** Descarga la aplicación desde el enlace proporcionado.
+***Emparejamiento Bluetooth:***
+- Activa el Bluetooth en tu dispositivo móvil.
+- Busca el módulo HC-06 y realiza el emparejamiento.
+- Confirma la conexión en la aplicación.
+- Configura las funciones de la planta interactiva directamente desde la aplicación.
+
+### 5. Validación Final
+- Pruebas funcionales:
+- Verifica el funcionamiento de la bomba al detectar baja humedad.
+- Observa las lecturas de los sensores en la pantalla LCD.
+- Testea la interacción táctil y la respuesta del sistema.
+- Comprueba la emisión de sonido mediante el DFPlayer Mini.
+- Ajustes finales: Realiza correcciones necesarias en la instalación o en el código.
+
+Siguiendo todos estos pasos correctamente, tendras instalado el prototipo "Tu amiga Titi"
