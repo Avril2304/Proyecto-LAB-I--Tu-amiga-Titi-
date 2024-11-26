@@ -58,6 +58,7 @@ Para la correcta instalación del prototipo "Tu Amiga Titi", es necesario seguir
 Aprovecha los recursos proporcionados para facilitar el proceso de instalación:
 
 ***Video tutorial:*** Consulta el video para una explicación visual de cada paso.
+
 ***Esquemático del diseño electrónico:*** Verifica las conexiones siguiendo el esquema editado.
 
 ### 2. Conexiones de Hardware
