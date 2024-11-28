@@ -33,7 +33,7 @@ El objetivo principal de este proyecto es automatizar el cuidado de la planta, b
 **2. APP**
 
     * archivo .aia de "APP Inventor"
-    * codigo de la APP 
+    * codigo en bloques de la APP 
 
 **3. Arduino**
 
