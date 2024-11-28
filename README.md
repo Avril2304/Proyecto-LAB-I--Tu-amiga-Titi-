@@ -5,15 +5,17 @@ En este repositorio vamos a almacenar toda la informacion sobre el final de la m
 
 ## Descripción
 
-Este proyecto consiste en desarrollar una planta interactiva que funcione como una mascota, integrando funciones automáticas mediante la tecnología Arduino. Sus principales características incluyen:
+Este proyecto consiste en desarrollar una planta interactiva que funcione como una mascota, integrando funciones automáticas y personalizables mediante tecnología Arduino. Sus principales características incluyen:
 
-**Sistema de riego inteligente** : Controlable de forma automática o manual a través de una aplicación, con un sensor de humedad que activa una bomba de agua conectada a un tanque. La planta emite sonidos para avisar cuándo necesita agua y cuándo ha sido regada, mientras que un rostro en la pantalla LCD cambia de expresión según su estado.
+**Sistema de riego inteligente:** Un sensor de humedad evalúa el estado del suelo y activa automáticamente una bomba de agua conectada a un tanque cuando la planta necesita ser regada. Además, cuando se le consulta su estado, el sistema emitira sonidos para informar al usuario tanto cuando la planta requiere agua como cuando ha sido regada de más.
 
-**Detección de iluminación**: Un sensor de luz evalúa si la planta recibe la luz adecuada. Según la cantidad de luz, el rostro en la pantalla LCD se ajusta, y el sistema notifica al usuario en la aplicación si la planta necesita ser reubicada en un lugar mejor iluminado.
+**Detección de iluminación:** Un sensor de luz analiza si la planta recibe la cantidad adecuada de iluminación. Si la luz es insuficiente o demasiada, el sistema, al ser consultado mediante la aplicación móvil, notifica al usuario y sugiere reubicar la planta en un lugar mejor iluminado para optimizar su cuidado.
 
-**Interacción por voz**: La planta responde a comandos básicos como "Hola", "Chau" y "titi", lo que permite una interacción sencilla y amigable. Aunque no es un sistema conversacional avanzado, esta función añade un toque de cercanía y conexión con el usuario.
+**Interacción por voz:** La planta responde a comandos básicos como "Hola", "Chau" o "¿Como estas?", lo que permite una interacción sencilla y amigable. Adicionalmente, al consultar su estado, la planta mostrará una reacción visual en la pantalla LCD, reflejando su estado de ánimo o necesidades actuales, lo que agrega un toque de cercanía y personalidad al sistema.
 
-El objetivo principal de este proyecto es automatizar el cuidado de la planta, ofreciendo una experiencia divertida y accesible para quienes buscan compañía en el hogar sin asumir grandes responsabilidades, facilitando el proceso de cuidado de una manera entretenida y práctica.
+**Configuración y personalización mediante aplicación móvil:** A través de una aplicación móvil, el usuario puede configurar el sistema de acuerdo con el tipo de planta que posee, ajustando parámetros como niveles óptimos de humedad y luz. También es posible interactuar directamente con la planta, consultando su estado, enviando comandos básicos o recibiendo notificaciones en tiempo real sobre su cuidado.
+
+El objetivo principal de este proyecto es automatizar el cuidado de la planta, brindando una experiencia entretenida, accesible y práctica. Está diseñado para personas que buscan disfrutar de la compañía de una planta sin las preocupaciones asociadas a su mantenimiento diario, facilitando el proceso de cuidado mientras añaden un toque interactivo y divertido a su hogar.
 
 ## Tecnologías utilizadas
 * Placa Arduino MEGA
