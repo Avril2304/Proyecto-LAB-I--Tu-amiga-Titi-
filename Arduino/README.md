@@ -8,21 +8,15 @@ Tambien esta subido en su archivo .ino para ser usado en Arduino IDE
 #include <LCDI2C_Viet.h>  // Biblioteca para display LCD
 #include <ROM_Standard_JP.h> //bibloteca para hacer rostros
 #include "DFRobotDFPlayerMini.h"//bibloteca dfplayer
-//#include <SimpleKalmanFilter.h>  // Biblioteca para el filtro Kalman
  
 #define FPSerial Serial1// Configuración del DFPlayer Mini usando Serial1
 DFRobotDFPlayerMini myDFPlayer;
  
-/*------FILTRO KALMAN-------*/
-//SimpleKalmanFilter kalmanSensor1(2, 2, 0.01);  // Filtro Kalman para el Sensor 1 para disminuir sensibilidad
- 
 // Configuración del LCD
 LiquidCrystal_I2C_Viet lcd(0x27, 20, 4);  
- 
 /*------Variables-------*/
 String datos = "";
-int humedad = 0, minhumedad = 921, maxhumedad = 0, maxluz = 0, minluz = 0, luz = 0;
- 
+int humedad = 0, minhumedad = 1500, maxhumedad = 0, maxluz = 0, minluz = 2000, luz = 0;
 // Caracteres personalizados para el LCD
 const byte ojos[8] = { B00000, B00000, B11111, B11111, B11111, B11111, B11111, B11111 };
 const byte boca1[8] = { B00000, B00000, B00000, B00000, B00000, B11111, B11111, B11111 };
@@ -119,28 +113,21 @@ void caraSol(){
 }
 /*------Funcion para actualizar las ncecesidades de la planta-------*/
 void actualizarConfiguracion(String datos) {
-    if (datos == "AA" || datos == "AB" || datos == "AC" || datos == "AD"||datos == "AE") {  //si es interior
+    if (datos == "AA" || datos == "AB" || datos == "AC" || datos == "AD"||datos == "AE"||datos=="AX") {  //si es interior
         minhumedad = 500;
         maxhumedad = 250;
         minluz =1003 ;
         maxluz = 600;
-    } else if (datos == "BA" || datos == "BB" || datos == "BC" || datos == "BD"||datos == "BE") {  //si es exterior
+    } else if (datos == "BA" || datos == "BB" || datos == "BC" || datos == "BD"||datos == "BE"||datos=="BX") {  //si es exterior
         minhumedad = 400;
         maxhumedad = 100;
         minluz = 800;
         maxluz = 300;
-    } else {//si no es ninguna
-        minhumedad = 1500;
-        maxhumedad = 0;
-        minluz = 2000;
-        maxluz = 0;
     }
       carafeliz();
-   
 }
  /*------Funcion para audios-------*/
 void planta(int humedad, int luz, int minhumedad, int maxhumedad, int minluz, int maxluz, String dato) {
-   
     if(dato=="AE"||dato=="BE"){
       if (humedad <= maxhumedad) {//si la humedad es mayor al maximo
           Serial.println("Demasiada agua");
@@ -169,7 +156,6 @@ void planta(int humedad, int luz, int minhumedad, int maxhumedad, int minluz, in
         carafeliz();
     }
 }
- 
    /*------Funcion Setup-------*/
 void setup() {
     Serial2.begin(9600);  // Comunicación con el monitor serie 2
@@ -190,17 +176,15 @@ void setup() {
 }
   /*------Funcion Loop-------*/
 void loop() {
-int estado=digitalRead(8);
- // float valorFiltrado1 = kalmanSensor1.updateEstimate(digitalRead(8));//apli camos el filtro al sensor capacitivo
+   int estado=digitalRead(8);
    Serial.println(" SENSOR: ");
-   //Serial.println(valorFiltrado1);
   Serial.println(estado);
   if (estado==1) {//si el valor es mayor a 0.04
     Serial.println(" SENSOR activado.");
       myDFPlayer.play(10);  //audio risa
       delay(7000);
   }
-   
+    delay(700);
     humedad = analogRead(A0);//sesnor de humedad
     luz = analogRead(A1);//sebsor de luz
  
@@ -247,4 +231,3 @@ int estado=digitalRead(8);
     delay(1000);
       carafeliz();
 }
- 
