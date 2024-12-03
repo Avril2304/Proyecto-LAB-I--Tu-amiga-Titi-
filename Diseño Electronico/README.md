@@ -17,6 +17,7 @@ Imagen del diseño electrónico creado en Tinkercad y editado en Photoshop para 
 
 ### ACLARACION
 La imagen fue generada a partir del archivo .BRD y editada con imágenes de los componentes reales del proyecto. Dado que algunos componentes no estaban disponibles en la plataforma, se usaron representaciones visuales similares, pero con las mismas funciones.
+Ademas, se ilustra que utilizamos un Arduino UNO, mientras que nosotras finalmente usamos una placa Arduino MEGA, por falta de memoria.
 
 ![DISEÑO ELECTRONICO](https://github.com/user-attachments/assets/9b17337f-5911-47c5-8be4-31091c912294)
 
