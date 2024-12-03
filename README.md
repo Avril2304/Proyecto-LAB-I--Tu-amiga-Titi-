@@ -94,8 +94,8 @@ Aprovecha los recursos proporcionados para facilitar el proceso de instalación:
     + Signal: Pin analógico A0 en Arduino Mega.
 
 **Paso 5: Sensor Táctil Capacitivo TTP223**
--Coloca el sensor en un lugar accesible para la interacción del usuario.
--Conecta sus pines:
+- Coloca el sensor en un lugar accesible para la interacción del usuario.
+- Conecta sus pines:
     + VCC: Pin de 5V en Arduino Mega.
     + GND: Pin GND en Arduino Mega.
     + Signal: Pin digital (D2, por ejemplo) en Arduino Mega.
