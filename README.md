@@ -142,6 +142,9 @@ Antes de cargar el código, verifica:
 ### 4. Configuración de la Aplicación Móvil
 ***Descarga e instalación:*** Descarga la aplicación desde el enlace proporcionado.
 
+**ENLACE PARA ABRIR DRIVE**
+https://drive.google.com/drive/folders/1TEbHYMsClE_ovuQ5bpBkStJ184czhBTf?usp=sharing 
+
 ***Emparejamiento Bluetooth:***
 - Activa el Bluetooth en tu dispositivo móvil.
 - Busca el módulo HC-06 y realiza el emparejamiento.
