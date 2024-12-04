@@ -5,7 +5,6 @@ En esta carpeta encontraremos el codigo que realizamos para el funcionamiento de
 
 Tambien esta subido en su archivo .ino para ser usado en Arduino IDE.
 
-## CODIGO TERMINADO
 #include <LCDI2C_Viet.h>  // Biblioteca para display LCD
 #include <ROM_Standard_JP.h> //bibloteca para hacer rostros
 #include "DFRobotDFPlayerMini.h"//bibloteca dfplayer
@@ -117,13 +116,13 @@ void actualizarConfiguracion(String datos) {
     if (datos == "AA" || datos == "AB" || datos == "AC" || datos == "AD"||datos == "AE"||datos=="AX") {  //si es interior
         minhumedad = 500;
         maxhumedad = 250;
-        minluz =1003 ;
-        maxluz = 600;
+        minluz =1000 ;
+        maxluz =80;
     } else if (datos == "BA" || datos == "BB" || datos == "BC" || datos == "BD"||datos == "BE"||datos=="BX") {  //si es exterior
-        minhumedad = 400;
-        maxhumedad = 100;
+        minhumedad = 1200;
+        maxhumedad = 400;
         minluz = 800;
-        maxluz = 300;
+        maxluz = 50;
     }
       carafeliz();
 }
