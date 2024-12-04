@@ -2,7 +2,8 @@
 ##### Proyecto LAB I 
 ### Por Bianconi Clara y Ogas Avril:
 En esta carpeta encontraremos el codigo que realizamos para el funcionamiento del Arduino de nuestro proyecto "Tu amiga Titi":
-Tambien esta subido en su archivo .ino para ser usado en Arduino IDE
+
+Tambien esta subido en su archivo .ino para ser usado en Arduino IDE.
 
 ## CODIGO TERMINADO
 #include <LCDI2C_Viet.h>  // Biblioteca para display LCD
