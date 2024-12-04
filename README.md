@@ -142,7 +142,7 @@ Antes de cargar el código, verifica:
 ### 4. Configuración de la Aplicación Móvil
 ***Descarga e instalación:*** Descarga la aplicación desde el enlace proporcionado.
 
-**ENLACE PARA ABRIR DRIVE**
+**ENLACE PARA DESCARGAR APLICACION PARA DISPOSITO MOVIL DESDE DRIVE**
 https://drive.google.com/drive/folders/1TEbHYMsClE_ovuQ5bpBkStJ184czhBTf?usp=sharing 
 
 ***Emparejamiento Bluetooth:***
